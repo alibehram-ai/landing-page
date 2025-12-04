@@ -7,7 +7,7 @@
   };
 </script>
 
-<div class="w-full bg-[#00a854] font-sans my-20 text-[#1a1a1a] pb-12">
+<div id="pricing" class="w-full bg-[#00a854] font-sans my-20 text-[#1a1a1a] pb-12">
   <div class="max-w-[1400px] mx-auto px-4 py-16 md:py-24">
     
     <!-- Header -->

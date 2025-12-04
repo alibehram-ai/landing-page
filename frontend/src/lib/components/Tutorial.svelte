@@ -26,7 +26,7 @@
 	</div>
 
 	<!-- CTA Button -->
-	<div class="flex justify-center mb-8 sm:mb-12 md:mb-16 px-4 sm:px-0">
+	<div id="join" class="flex justify-center mb-8 sm:mb-12 md:mb-16 px-4 sm:px-0">
 		<button 
 			class="w-full sm:w-auto bg-[#02a758] text-white font-bold text-base sm:text-lg leading-6 px-8 sm:px-6 py-3 sm:py-4 shadow-[0_0.5px_0.8px_rgba(10,19,53,0.08),0_0_0.5px_rgba(0,0,0,0.4),0_0_0.5px_rgba(0,0,0,0.64)] hover:bg-[#028f4c] transition-colors"
 		>

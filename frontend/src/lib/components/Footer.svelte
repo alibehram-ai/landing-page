@@ -3,8 +3,8 @@
   import { LogoFull2x, IconLeaves, IconLeaves2, IconHelp11, IconChatEmpty } from '$lib/assets/index';
 const isBlogPage = $derived(page.url.pathname.startsWith('/blogs')); 
 </script>
-
-<footer class="w-full border-t bg-[#F5F5F0] border-[#e0e0e0]">
+<div class="bg-[#F5F5F0]">
+<footer class="w-full border-t  border-[#e0e0e0] max-w-5xl mx-auto">
   <!-- Main Footer Content -->
   <div class="max-w-[1180px] mx-auto px-6 py-8 sm:py-12 lg:py-16">
     <div class="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16">
@@ -37,11 +37,11 @@ const isBlogPage = $derived(page.url.pathname.startsWith('/blogs'));
         <div>
           <h4 class="text-xs sm:text-sm text-[#3d3d3d] opacity-50 mb-3 sm:mb-5">Main</h4>
           <ul class="space-y-3 sm:space-y-4">
-            <li><a href="#join" class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline">Become a member</a></li>
-            <li><a href="#features" class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline">Features</a></li>
-            <li><a href="#pricing" class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline">Pricing</a></li>
-            <li><a href="#tutorial" class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline">Tutorial</a></li>
-            <li><a href="/blog" class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline">Blog</a></li>
+            <li><a href={isBlogPage ? "/#join" : "#join"} class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline">Become a member</a></li>
+            <li><a href={isBlogPage ? "/#features" : "#features"} class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline">Features</a></li>
+            <li><a href={isBlogPage ? "/#pricing" : "#pricing"} class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline">Pricing</a></li>
+            <li><a href={isBlogPage ? "/#tutorial" : "#tutorial"} class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline">Tutorial</a></li>
+            <li><a href="/blogs" class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline">Blog</a></li>
           </ul>
         </div>
 
@@ -126,3 +126,5 @@ const isBlogPage = $derived(page.url.pathname.startsWith('/blogs'));
     </div>
   </div>
 </footer>
+</div>
+
