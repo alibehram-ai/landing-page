@@ -12,7 +12,7 @@
 	}
 </script>
 
-<header class="w-full h-20 flex justify-between items-center px-6 md:px-20 xl:px-[165px] bg-[#fafaf5] relative">
+<header class="w-full h-20 flex justify-between items-center px-6 md:px-20 xl:px-[165px] bg-[#F5F5F0] relative">
 	<div class="flex items-center gap-2">
 		<div class="flex items-center gap-1.5">
 			<img src={LogoFull} alt="AfterLib" class="h-6" />

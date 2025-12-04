@@ -3,7 +3,7 @@
 
 </script>
 
-<footer class="w-full border-t bg-[#fdfdfc] border-[#e0e0e0]">
+<footer class="w-full border-t bg-[#F5F5F0] border-[#e0e0e0]">
   <!-- Main Footer Content -->
   <div class="max-w-[1180px] mx-auto px-6 py-8 sm:py-12 lg:py-16">
     <div class="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16">

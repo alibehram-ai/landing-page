@@ -68,7 +68,7 @@
   };
 </script>
 
-<div class="w-full bg-[#fdfdfc] font-sans py-20 px-4">
+<div class="w-full bg-[#F5F5F0] font-sans py-20 px-4">
   <div class="max-w-[800px] mx-auto">
     
     <!-- Header -->
