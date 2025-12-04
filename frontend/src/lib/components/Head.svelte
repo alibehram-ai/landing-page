@@ -28,10 +28,10 @@
 		<a href={isBlogPage ? "/#pricing" : "#pricing"} class="px-2 py-2 bg-[#fafaf5] border border-[#c2c2c2] text-xs font-semibold leading-4 text-[#1e1e1e] hover:bg-[#f0f0eb] transition-all duration-200 cursor-pointer inline-block">
 			Pricing
 		</a>
-		<a href={isBlogPage ? "/#feature" : "#pricing"}  class="px-2 py-2 bg-[#fafaf5] border border-[#c2c2c2] text-xs font-semibold leading-4 text-[#1e1e1e] hover:bg-[#f0f0eb] transition-all duration-200 cursor-pointer inline-block">
+		<a href={isBlogPage ? "/#features" : "#features"}  class="px-2 py-2 bg-[#fafaf5] border border-[#c2c2c2] text-xs font-semibold leading-4 text-[#1e1e1e] hover:bg-[#f0f0eb] transition-all duration-200 cursor-pointer inline-block">
 			Features
 		</a>
-		<a href={isBlogPage ? "/#pricing" : "#pricing"}  class="px-2 py-2 bg-[#fafaf5] border border-[#c2c2c2] text-xs font-semibold leading-4 text-[#1e1e1e] hover:bg-[#f0f0eb] transition-all duration-200 cursor-pointer inline-block">
+		<a href={isBlogPage ? "/#affiliate" : "#affiliate"}  class="px-2 py-2 bg-[#fafaf5] border border-[#c2c2c2] text-xs font-semibold leading-4 text-[#1e1e1e] hover:bg-[#f0f0eb] transition-all duration-200 cursor-pointer inline-block">
 			Affiliate
 		</a>
 		<a href="/blogs" class="px-2 py-2 bg-[#fafaf5] border border-[#c2c2c2] text-xs font-semibold leading-4 text-[#1e1e1e] hover:bg-[#f0f0eb] transition-all duration-200 cursor-pointer inline-block">
@@ -58,21 +58,21 @@
 		<nav class="absolute top-20 left-0 right-0 bg-[#fafaf5] border-t border-[#c2c2c2] shadow-lg sm:hidden z-50">
 			<div class="flex flex-col p-4 gap-2">
 				<a 
-					href="#pricing" 
+					href={isBlogPage ? "/#pricing" : "#pricing"}
 					onclick={closeMobileMenu}
 					class="px-4 py-3 bg-[#fafaf5] border border-[#c2c2c2] text-sm font-semibold text-[#1e1e1e] hover:bg-[#f0f0eb] transition-all duration-200 cursor-pointer"
 				>
 					Pricing
 				</a>
 				<a 
-					href="#features" 
+					href={isBlogPage ? "/#features" : "#features"}  
 					onclick={closeMobileMenu}
 					class="px-4 py-3 bg-[#fafaf5] border border-[#c2c2c2] text-sm font-semibold text-[#1e1e1e] hover:bg-[#f0f0eb] transition-all duration-200 cursor-pointer"
 				>
 					Features
 				</a>
 				<a 
-					href="#affiliate" 
+					href={isBlogPage ? "/#affiliate" : "#affiliate"} 
 					onclick={closeMobileMenu}
 					class="px-4 py-3 bg-[#fafaf5] border border-[#c2c2c2] text-sm font-semibold text-[#1e1e1e] hover:bg-[#f0f0eb] transition-all duration-200 cursor-pointer"
 				>
@@ -86,7 +86,7 @@
 					Blog
 				</a>
 				<a 
-					href="#join" 
+					href={isBlogPage ? "/#join" : "#join"} 
 					onclick={closeMobileMenu}
 					class="px-4 py-3 bg-[#02a758] text-sm font-semibold text-white hover:bg-[#028f4c] transition-all duration-200 cursor-pointer shadow-[0px_0.5px_0.8px_rgba(10,19,53,0.08),0px_0px_0.5px_rgba(0,0,0,0.4),0px_0px_0.5px_rgba(0,0,0,0.64)]"
 				>

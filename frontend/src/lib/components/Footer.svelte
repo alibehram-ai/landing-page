@@ -1,6 +1,7 @@
 <script lang="ts">
+	import { page } from '$app/state';
   import { LogoFull2x, IconLeaves, IconLeaves2, IconHelp11, IconChatEmpty } from '$lib/assets/index';
-
+const isBlogPage = $derived(page.url.pathname.startsWith('/blogs')); 
 </script>
 
 <footer class="w-full border-t bg-[#F5F5F0] border-[#e0e0e0]">
@@ -49,25 +50,25 @@
           <h4 class="text-xs sm:text-sm text-[#3d3d3d] opacity-50 mb-3 sm:mb-5">Resources</h4>
           <ul class="space-y-3 sm:space-y-4">
             <li>
-              <a href="#affiliate" class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline flex items-center gap-1">
+              <a href={isBlogPage ? "/#affiliate" : "#affiliate"} class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline flex items-center gap-1">
                 <img class="w-5 h-5 shrink-0" src={IconLeaves} alt="Affiliate" />
                 Affiliate partnership
               </a>
             </li>
             <li>
-              <a href="#support" class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline flex items-center gap-1">
+              <a href={isBlogPage ? "/#support" : "#support"} class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline flex items-center gap-1">
                 <img class="w-5 h-5 shrink-0" src={IconChatEmpty} alt="Support" />
                 Contact support
               </a>
             </li>
             <li>
-              <a href="#reviews" class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline flex items-center gap-1">
+              <a href={isBlogPage ? "/#reviews" : "#reviews"} class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline flex items-center gap-1">
                 <img class="w-5 h-5 shrink-0" src={IconLeaves2} alt="Reviews" />
                 Reviews
               </a>
             </li>
             <li>
-              <a href="#faq" class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline flex items-center gap-1">
+              <a href={isBlogPage ? "/#faq" : "#faq"} class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline flex items-center gap-1">
                 <img class="w-5 h-5 shrink-0" src={IconHelp11} alt="FAQ" />
                 FAQ
               </a>

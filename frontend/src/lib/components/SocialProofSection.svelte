@@ -58,7 +58,7 @@
 	}
 </script>
 
-<section class="w-full max-w-[1510px] mx-auto px-5 sm:px-10 md:px-20 xl:px-[165px] py-8 sm:py-12 md:py-16">
+<section id="affiliate" class="w-full max-w-[1510px] mx-auto px-5 sm:px-10 md:px-20 xl:px-[165px] py-8 sm:py-12 md:py-16">
 	<!-- Heading Section -->
 	<div class="max-w-[1180px] mx-auto mb-8 sm:mb-12 md:mb-16">
 		<div class="flex flex-col items-center gap-4 sm:gap-6 mb-8 sm:mb-12 md:mb-16">
