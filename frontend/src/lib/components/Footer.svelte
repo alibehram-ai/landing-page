@@ -3,39 +3,39 @@
 
 </script>
 
-<footer class="w-full border-t border-[#e0e0e0]">
+<footer class="w-full border-t bg-[#fdfdfc] border-[#e0e0e0]">
   <!-- Main Footer Content -->
-  <div class="max-w-[1180px] mx-auto px-4 py-16">
-    <div class="flex flex-col lg:flex-row gap-16">
+  <div class="max-w-[1180px] mx-auto px-6 py-8 sm:py-12 lg:py-16">
+    <div class="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16">
       <!-- Left Column: Logo and CTA -->
       <div class="lg:w-[372px]">
         <!-- Logo -->
-        <div class="mb-10">
-          <img src={LogoFull2x} alt="AfterLib" class="h-12" />
+        <div class="mb-6 sm:mb-8 lg:mb-10">
+          <img src={LogoFull2x} alt="AfterLib" class="h-8 sm:h-10 lg:h-12" />
         </div>
 
         <!-- CTA Text -->
-        <div class="mb-10">
-          <h3 class="text-2xl font-bold text-[#1e1e1e] leading-7 mb-4">
-            Ready to find winning ads<br />and outscale your competitors?
+        <div class="mb-6 sm:mb-8 lg:mb-10">
+          <h3 class="text-xl sm:text-2xl font-bold text-[#1e1e1e] leading-6 sm:leading-7 mb-3 sm:mb-4">
+            Ready to find winning ads and outscale your competitors?
           </h3>
-          <p class="text-lg text-[#1e1e1e] leading-6">
-            Join thousands of marketers who trust<br />AfterLib for real ad intelligence.<br />No fake data. No hype. Just facts.
+          <p class="text-base sm:text-lg text-[#1e1e1e] leading-5 sm:leading-6">
+            Join thousands of marketers who trust AfterLib for real ad intelligence. No fake data. No hype. Just facts.
           </p>
         </div>
 
         <!-- CTA Button -->
-        <button class="px-4 py-3.5 bg-[#02a758] text-white text-sm font-bold leading-4">
+        <button class="w-full sm:w-auto px-6 py-3 sm:px-4 sm:py-3.5 bg-[#02a758] text-white text-sm font-bold leading-4 hover:bg-[#028f4c] transition-colors">
           Start winning
         </button>
       </div>
 
       <!-- Right Columns: Navigation Links -->
-      <div class="flex-1 flex flex-col sm:flex-row gap-8 lg:gap-16 lg:ml-32">
+      <div class="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 lg:gap-16 lg:ml-32">
         <!-- Main Column -->
-        <div class="flex-1">
-          <h4 class="text-sm text-[#3d3d3d] opacity-50 mb-5">Main</h4>
-          <ul class="space-y-4">
+        <div>
+          <h4 class="text-xs sm:text-sm text-[#3d3d3d] opacity-50 mb-3 sm:mb-5">Main</h4>
+          <ul class="space-y-3 sm:space-y-4">
             <li><a href="#join" class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline">Become a member</a></li>
             <li><a href="#features" class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline">Features</a></li>
             <li><a href="#pricing" class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline">Pricing</a></li>
@@ -45,32 +45,30 @@
         </div>
 
         <!-- Resources Column -->
-        <div class="flex-1">
-          <h4 class="text-sm text-[#3d3d3d] opacity-50 mb-5">Resources</h4>
-          <ul class="space-y-4">
+        <div>
+          <h4 class="text-xs sm:text-sm text-[#3d3d3d] opacity-50 mb-3 sm:mb-5">Resources</h4>
+          <ul class="space-y-3 sm:space-y-4">
             <li>
               <a href="#affiliate" class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline flex items-center gap-1">
-                <img class="w-5 h-5" src={IconLeaves} alt="Affiliate" />
+                <img class="w-5 h-5 shrink-0" src={IconLeaves} alt="Affiliate" />
                 Affiliate partnership
               </a>
             </li>
             <li>
               <a href="#support" class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline flex items-center gap-1">
-               
-                 <img class="w-5 h-5" src={IconChatEmpty} alt="Support" />
+                <img class="w-5 h-5 shrink-0" src={IconChatEmpty} alt="Support" />
                 Contact support
               </a>
             </li>
             <li>
               <a href="#reviews" class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline flex items-center gap-1">
-               
-                <img class="w-5 h-5" src={IconLeaves2} alt="Reviews" />
+                <img class="w-5 h-5 shrink-0" src={IconLeaves2} alt="Reviews" />
                 Reviews
               </a>
             </li>
             <li>
               <a href="#faq" class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline flex items-center gap-1">
-                 <img class="w-5 h-5" src={IconHelp11} alt="FAQ" />
+                <img class="w-5 h-5 shrink-0" src={IconHelp11} alt="FAQ" />
                 FAQ
               </a>
             </li>
@@ -78,9 +76,9 @@
         </div>
 
         <!-- Legal Column -->
-        <div class="flex-1">
-          <h4 class="text-sm text-[#3d3d3d] opacity-50 mb-5">Legal</h4>
-          <ul class="space-y-4">
+        <div>
+          <h4 class="text-xs sm:text-sm text-[#3d3d3d] opacity-50 mb-3 sm:mb-5">Legal</h4>
+          <ul class="space-y-3 sm:space-y-4">
             <li><a href="#privacy" class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline">Terms of service</a></li>
             <li><a href="#terms" class="text-sm font-semibold text-[#1e1e1e] leading-5 hover:underline">Privacy policy</a></li>
           </ul>
@@ -91,7 +89,7 @@
 
   <!-- Social Media Section -->
   <div class="border-t border-[#e0e0e0]">
-    <div class="max-w-[1180px] mx-auto px-4 py-8">
+    <div class="max-w-[1180px] mx-auto px-6 py-6 sm:py-8">
       <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
         <p class="text-sm text-[#1e1e1e] leading-5">Copyright @ 2025</p>
         
@@ -120,8 +118,8 @@
 
   <!-- Legal Disclaimer -->
   <div class="border-t border-[#e0e0e0]">
-    <div class="max-w-[1180px] mx-auto px-4 py-8">
-      <p class="text-sm text-[#3d3d3d] leading-5">
+    <div class="max-w-[1180px] mx-auto px-6 py-6 sm:py-8">
+      <p class="text-xs sm:text-sm text-[#3d3d3d] leading-5">
         Please note that this site is an independent entity and is not affiliated with, sponsored by, or endorsed by Facebook INC, Meta Platforms Inc., Instagram, Shopify, or any of their respective affiliates or subsidiaries. The names Facebook, Meta, Instagram, and Shopify, as well as any associated logos and trademarks, are the exclusive property of their respective owners. All trademarks and logos appearing on this site are for informational purposes only and are acknowledged to be the property of their respective owners. Any references to these trademarks are used solely for descriptive purposes and do not imply any endorsement or association with their respective holders.
       </p>
     </div>

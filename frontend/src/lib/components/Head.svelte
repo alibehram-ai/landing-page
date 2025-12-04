@@ -1,8 +1,18 @@
 <script lang="ts">
 	import {LogoFull} from '$lib/assets/';
+	
+	let isMobileMenuOpen = $state(false);
+	
+	function toggleMobileMenu() {
+		isMobileMenuOpen = !isMobileMenuOpen;
+	}
+	
+	function closeMobileMenu() {
+		isMobileMenuOpen = false;
+	}
 </script>
 
-<header class="w-full h-20 flex justify-between items-center px-6 md:px-20 xl:px-[165px] bg-[#fafaf5]">
+<header class="w-full h-20 flex justify-between items-center px-6 md:px-20 xl:px-[165px] bg-[#fafaf5] relative">
 	<div class="flex items-center gap-2">
 		<div class="flex items-center gap-1.5">
 			<img src={LogoFull} alt="AfterLib" class="h-6" />
@@ -12,6 +22,7 @@
 		</div>
 	</div>
 
+	<!-- Desktop Navigation -->
 	<nav class="hidden sm:flex items-center gap-3">
 		<a href="#pricing" class="px-2 py-2 bg-[#fafaf5] border border-[#c2c2c2] text-xs font-semibold leading-4 text-[#1e1e1e] hover:bg-[#f0f0eb] transition-all duration-200 cursor-pointer inline-block">
 			Pricing
@@ -29,4 +40,58 @@
 			Join AfterLib
 		</a>
 	</nav>
+
+	<!-- Mobile Hamburger Button -->
+	<button 
+		onclick={toggleMobileMenu}
+		class="sm:hidden flex flex-col gap-1.5 w-6 h-6 justify-center items-center cursor-pointer"
+		aria-label="Toggle menu"
+	>
+		<span class="w-5 h-0.5 bg-[#1e1e1e] transition-all duration-300" class:rotate-45={isMobileMenuOpen} class:translate-y-2={isMobileMenuOpen}></span>
+		<span class="w-5 h-0.5 bg-[#1e1e1e] transition-all duration-300" class:opacity-0={isMobileMenuOpen}></span>
+		<span class="w-5 h-0.5 bg-[#1e1e1e] transition-all duration-300" class:-rotate-45={isMobileMenuOpen} class:-translate-y-2={isMobileMenuOpen}></span>
+	</button>
+
+	<!-- Mobile Menu Dropdown -->
+	{#if isMobileMenuOpen}
+		<nav class="absolute top-20 left-0 right-0 bg-[#fafaf5] border-t border-[#c2c2c2] shadow-lg sm:hidden z-50">
+			<div class="flex flex-col p-4 gap-2">
+				<a 
+					href="#pricing" 
+					onclick={closeMobileMenu}
+					class="px-4 py-3 bg-[#fafaf5] border border-[#c2c2c2] text-sm font-semibold text-[#1e1e1e] hover:bg-[#f0f0eb] transition-all duration-200 cursor-pointer"
+				>
+					Pricing
+				</a>
+				<a 
+					href="#features" 
+					onclick={closeMobileMenu}
+					class="px-4 py-3 bg-[#fafaf5] border border-[#c2c2c2] text-sm font-semibold text-[#1e1e1e] hover:bg-[#f0f0eb] transition-all duration-200 cursor-pointer"
+				>
+					Features
+				</a>
+				<a 
+					href="#affiliate" 
+					onclick={closeMobileMenu}
+					class="px-4 py-3 bg-[#fafaf5] border border-[#c2c2c2] text-sm font-semibold text-[#1e1e1e] hover:bg-[#f0f0eb] transition-all duration-200 cursor-pointer"
+				>
+					Affiliate
+				</a>
+				<a 
+					href="/blogs" 
+					onclick={closeMobileMenu}
+					class="px-4 py-3 bg-[#fafaf5] border border-[#c2c2c2] text-sm font-semibold text-[#1e1e1e] hover:bg-[#f0f0eb] transition-all duration-200 cursor-pointer"
+				>
+					Blog
+				</a>
+				<a 
+					href="#join" 
+					onclick={closeMobileMenu}
+					class="px-4 py-3 bg-[#02a758] text-sm font-semibold text-white hover:bg-[#028f4c] transition-all duration-200 cursor-pointer shadow-[0px_0.5px_0.8px_rgba(10,19,53,0.08),0px_0px_0.5px_rgba(0,0,0,0.4),0px_0px_0.5px_rgba(0,0,0,0.64)]"
+				>
+					Join AfterLib
+				</a>
+			</div>
+		</nav>
+	{/if}
 </header>
