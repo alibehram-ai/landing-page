@@ -66,7 +66,7 @@
 	];
 
 	let activeTab = $state('categories');
-
+	import {OnDemand, SmartControl, SmartCategories, PageInsights} from '$lib/assets';
 	// Get active feature
 	let activeFeature = $derived(features.find((f) => f.id === activeTab) || features[0]);
 </script>
@@ -110,54 +110,9 @@
 		<div class="bg-[#F5F5F0] border border-[#dcdcdc]">
 			{#if activeFeature.id === 'categories'}
 				<!-- Category Filter Demo -->
-				<div class="p-6 md:p-12 flex gap-4 md:gap-8 h-full">
-					<!-- Category Dropdown -->
-					<div class="bg-white shadow-[0_0_4px_0_rgba(41,44,44,0.08)]">
-						<div class="flex flex-col">
-							{#each activeFeature.categories as category, index}
-								<div
-									class="px-2 md:px-3 py-3 cursor-pointer text-sm font-semibold transition-colors
-										{index === activeFeature.selectedCategory
-											? 'bg-[#02a758] text-white'
-											: 'bg-white text-[#1e1e1e] hover:bg-gray-50'}"
-								>
-									{category}
-								</div>
-							{/each}
-						</div>
-					</div>
-
-					<!-- Ad Cards Preview -->
-					<div class="flex gap-2 md:gap-4 overflow-x-auto flex-1">
-						{#each activeFeature.sampleAds as ad}
-							<div class="shrink-0 w-32 md:w-[200px] bg-white border border-[#e0e0e0]">
-								<!-- Card Header -->
-								<div class="p-1.5 border-b border-[#e0e0e0]">
-									<div class="flex items-center gap-2">
-										<!-- Avatar -->
-										<div class="w-6 md:w-8 h-6 md:h-8 rounded-full bg-gray-200 border border-[#e0e0e0] shrink-0"></div>
-										<!-- Brand Name -->
-										<span class="text-xs md:text-sm font-semibold text-[#1e1e1e]">{ad.brand}</span>
-									</div>
-								</div>
-								<!-- Card Image -->
-								<div class="w-full aspect-square bg-gray-100"></div>
-							</div>
-						{/each}
-						<!-- Partial card preview -->
-						<div class="shrink-0 w-3 md:w-4 bg-white border border-[#e0e0e0]">
-							<div class="p-1.5 border-b border-[#e0e0e0] h-9 md:h-11">
-								<div class="w-2 md:w-3 h-6 md:h-8 rounded-full bg-gray-200 border border-[#e0e0e0]"></div>
-							</div>
-							<div class="w-3 md:w-4 aspect-square bg-gray-100"></div>
-						</div>
-					</div>
-				</div>
+				<img src={SmartCategories} alt="Smart Categories Demo" class="w-full h-full object-cover" />
 			{:else}
-				<!-- Placeholder for other tabs -->
-				<div class="p-6 md:p-12 h-full flex items-center justify-center">
-					<span class="text-gray-400">Feature Demo: {activeFeature.label}</span>
-				</div>
+				<img src={SmartCategories} alt="Smart Categories Demo" class="w-full h-full object-cover" />
 			{/if}
 		</div>
 	</div>
@@ -181,57 +136,67 @@
 	<!-- Feature Showcase Cards Grid (2 rows of 2 cards each on desktop, 1 per row on mobile) -->
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-5 my-10">
 		<!-- Card 1: Page Insights -->
-		<div class="bg-white border border-[#e0e0e0] p-6 md:p-8">
+		<div class="bg-white border border-[#e0e0e0] pb-10">
 			<div class="mb-6 md:mb-12">
 				<!-- Illustration placeholder -->
-				<div class="bg-[#fafaf5] border border-[#dcdcdc] h-48 md:h-64 mb-6"></div>
+				<img src={PageInsights} alt="page insights" class="bg-[#fafaf5] border border-[#dcdcdc]  w-full mb-6"/>
 			</div>
-			<h3 class="text-xl md:text-[32px] font-bold text-[#1e1e1e] mb-3 md:mb-4">Page insights</h3>
+			<div class="px-8">
+				<h3 class="text-xl md:text-[32px] font-bold text-[#1e1e1e] mb-3 md:mb-4">Page insights</h3>
 			<p class="text-base md:text-2xl text-[#1e1e1e] leading-relaxed">
 				See total page reach, creatives, and performance signals to instantly understand what's
 				working.
 			</p>
+			</div>
+			
 		</div>
 
 		<!-- Card 2: On-demand Page Tracking -->
-		<div class="bg-white border border-[#e0e0e0] p-6 md:p-8">
+		<div class="bg-white border border-[#e0e0e0] pb-10">
 			<div class="mb-6 md:mb-12">
 				<!-- Illustration placeholder -->
-				<div class="bg-[#fafaf5] border border-[#dcdcdc] h-48 md:h-64 mb-6"></div>
+				<img src={OnDemand} alt="on-demand" class="bg-[#fafaf5] border border-[#dcdcdc]  w-full mb-6"/>
 			</div>
-			<h3 class="text-xl md:text-[32px] font-bold text-[#1e1e1e] mb-3 md:mb-4">
+			<div class="px-8">
+				<h3 class="text-xl md:text-[32px] font-bold text-[#1e1e1e] mb-3 md:mb-4">
 				On-demand page tracking
 			</h3>
 			<p class="text-base md:text-2xl text-[#1e1e1e] leading-relaxed">
 				Import any page and track every creative, launch, and growth signal across e-commerce, lead
 				gen, affiliate, and more.
 			</p>
+			</div>
+			
 		</div>
-        <div class="bg-white border border-[#e0e0e0] p-6 md:p-8">
+        <div class="bg-white border border-[#e0e0e0] pb-10">
 			<div class="mb-6 md:mb-12">
 				<!-- Illustration placeholder -->
-				<div class="bg-[#fafaf5] border border-[#dcdcdc] h-48 md:h-64 mb-6"></div>
+				<img src={OnDemand} alt="page insights" class="bg-[#fafaf5] border border-[#dcdcdc] w-full mb-6"/>
 			</div>
-			<h3 class="text-xl md:text-[32px] font-bold text-[#1e1e1e] mb-3 md:mb-4">Page insights</h3>
+			<div class="px-8">
+				<h3 class="text-xl md:text-[32px] font-bold text-[#1e1e1e] mb-3 md:mb-4">Smart Notifications</h3>
 			<p class="text-base md:text-2xl text-[#1e1e1e] leading-relaxed">
-				See total page reach, creatives, and performance signals to instantly understand what's
-				working.
+				Get instant alerts on your phone when ads scale, pages launch, or new winners appear. Stay ahead without manual checks.
 			</p>
+			</div>
+			
 		</div>
 
 		<!-- Card 2: On-demand Page Tracking -->
-		<div class="bg-white border border-[#e0e0e0] p-6 md:p-8">
+		<div class="bg-white border border-[#e0e0e0] pb-10">
 			<div class="mb-6 md:mb-12">
 				<!-- Illustration placeholder -->
-				<div class="bg-[#fafaf5] border border-[#dcdcdc] h-48 md:h-64 mb-6"></div>
+					<img src={SmartControl} alt="page insights" class="bg-[#fafaf5] border border-[#dcdcdc] w-full mb-6"/>
 			</div>
-			<h3 class="text-xl md:text-[32px] font-bold text-[#1e1e1e] mb-3 md:mb-4">
-				On-demand page tracking
+			<div class="px-8">
+<h3 class="text-xl md:text-[32px] font-bold text-[#1e1e1e] mb-3 md:mb-4">
+				Smart controls and flows
 			</h3>
 			<p class="text-base md:text-2xl text-[#1e1e1e] leading-relaxed">
-				Import any page and track every creative, launch, and growth signal across e-commerce, lead
-				gen, affiliate, and more.
+				Import Sheets, bulk analyze, and organize competitors and ads at scale to save hours every week for you and your team.
 			</p>
+			</div>
+			
 		</div>
 	</div>
 <div class="grid grid-cols-2 md:grid-cols-4 border-t-0">

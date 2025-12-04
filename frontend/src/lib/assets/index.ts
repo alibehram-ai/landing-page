@@ -133,4 +133,13 @@ export { default as TumblerSmallDefault4_2x } from './tumbler-small-default-4@2x
 export { default as TumblerSmallDefault4_3x } from './tumbler-small-default-4@3x.webp';
 
 export { default as TutorialImage } from './tutorial.png';
-    
+
+export { default as SmartNotifications } from './smart-notifications.png';
+
+export {default as OnDemand} from './on-demand.png';
+
+export {default as PageInsights} from './page-insights.png';
+
+export {default as SmartControl} from './smart-control.png';
+
+export {default as SmartCategories} from './smart-categories.png';
