@@ -26,42 +26,46 @@
       
       <!-- Starter Card -->
       <div class="bg-white flex flex-col h-full relative group">
-        <div class="p-6 flex-grow">
+        <div class="p-6 grow">
           <h3 class="text-2xl font-bold mb-1">Starter</h3>
           <div class="text-2xl font-bold mb-4">$49</div>
-          <p class="text-sm text-gray-600 mb-6 min-h-[40px]">
+          <p class="text-sm text-gray-600 mb-6 min-h-10">
             For beginners who want to learn about market research.
           </p>
           
           <!-- Toggle -->
-          <div class="flex items-center gap-3 mb-6 cursor-pointer" on:click={toggleBilling}>
+          <button 
+            type="button"
+            class="flex items-center gap-3 mb-6 cursor-pointer bg-transparent border-0 p-0 text-left w-full" 
+            on:click={toggleBilling}
+          >
             <div class="w-10 h-6 bg-gray-200 rounded-full relative transition-colors duration-200">
               <div class="w-4 h-4 bg-white rounded-full shadow absolute top-1 transition-all duration-200 {isAnnual ? 'left-1' : 'left-5'}"></div>
             </div>
             <span class="text-sm font-medium">Yearly billing (save $147)</span>
-          </div>
+          </button>
           
           <hr class="border-gray-100 mb-6">
           
           <ul class="space-y-3 text-sm">
             <li class="flex items-start gap-2">
-              <svg class="w-4 h-4 text-black mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              <svg class="w-4 h-4 text-black mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               <span>5 000 credits <span class="text-gray-400 border border-gray-400 rounded-full w-3.5 h-3.5 inline-flex items-center justify-center text-[10px] ml-1">?</span></span>
             </li>
             <li class="flex items-start gap-2">
-              <svg class="w-4 h-4 text-black mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              <svg class="w-4 h-4 text-black mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               Basic filters
             </li>
             <li class="flex items-start gap-2">
-              <svg class="w-4 h-4 text-black mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              <svg class="w-4 h-4 text-black mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               Categories
             </li>
             <li class="flex items-start gap-2">
-              <svg class="w-4 h-4 text-black mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              <svg class="w-4 h-4 text-black mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               Notifications
             </li>
             <li class="flex items-start gap-2">
-              <svg class="w-4 h-4 text-black mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              <svg class="w-4 h-4 text-black mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               Collections
             </li>
           </ul>
@@ -73,42 +77,45 @@
 
       <!-- Basic Card -->
       <div class="bg-white flex flex-col h-full relative group">
-        <div class="p-6 flex-grow">
+        <div class="p-6 grow">
           <h3 class="text-2xl font-bold mb-1">Basic</h3>
           <div class="text-2xl font-bold mb-4">$89</div>
-          <p class="text-sm text-gray-600 mb-6 min-h-[40px]">
+          <p class="text-sm text-gray-600 mb-6 min-h-10">
             For entrepreneurs who do light research a few times a week.
           </p>
           
-          <!-- Toggle -->
-          <div class="flex items-center gap-3 mb-6 cursor-pointer" on:click={toggleBilling}>
+         <button 
+            type="button"
+            class="flex items-center gap-3 mb-6 cursor-pointer bg-transparent border-0 p-0 text-left w-full" 
+            on:click={toggleBilling}
+          >
             <div class="w-10 h-6 bg-gray-200 rounded-full relative transition-colors duration-200">
               <div class="w-4 h-4 bg-white rounded-full shadow absolute top-1 transition-all duration-200 {isAnnual ? 'left-1' : 'left-5'}"></div>
             </div>
-            <span class="text-sm font-medium">Yearly billing (save $267)</span>
-          </div>
+            <span class="text-sm font-medium">Yearly billing (save $147)</span>
+          </button>
           
           <hr class="border-gray-100 mb-6">
           
           <ul class="space-y-3 text-sm">
             <li class="flex items-start gap-2">
-              <svg class="w-4 h-4 text-black mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              <svg class="w-4 h-4 text-black mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               <span>10 000 credits <span class="text-gray-400 border border-gray-400 rounded-full w-3.5 h-3.5 inline-flex items-center justify-center text-[10px] ml-1">?</span></span>
             </li>
             <li class="flex items-start gap-2">
-              <svg class="w-4 h-4 text-black mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              <svg class="w-4 h-4 text-black mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               Basic filters
             </li>
             <li class="flex items-start gap-2">
-              <svg class="w-4 h-4 text-black mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              <svg class="w-4 h-4 text-black mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               Categories
             </li>
             <li class="flex items-start gap-2">
-              <svg class="w-4 h-4 text-black mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              <svg class="w-4 h-4 text-black mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               Notifications
             </li>
             <li class="flex items-start gap-2">
-              <svg class="w-4 h-4 text-black mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              <svg class="w-4 h-4 text-black mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               Collections
             </li>
           </ul>
@@ -125,56 +132,59 @@
           Best seller
         </div>
 
-        <div class="p-6 flex-grow">
+        <div class="p-6 grow">
           <h3 class="text-2xl font-bold mb-1">Pro</h3>
           <div class="text-2xl font-bold mb-4">$119</div>
-          <p class="text-sm text-gray-600 mb-6 min-h-[40px]">
+          <p class="text-sm text-gray-600 mb-6 min-h-10">
             For professionals who want full control, or use it daily.
           </p>
           
-          <!-- Toggle -->
-          <div class="flex items-center gap-3 mb-6 cursor-pointer" on:click={toggleBilling}>
+         <button 
+            type="button"
+            class="flex items-center gap-3 mb-6 cursor-pointer bg-transparent border-0 p-0 text-left w-full" 
+            on:click={toggleBilling}
+          >
             <div class="w-10 h-6 bg-gray-200 rounded-full relative transition-colors duration-200">
               <div class="w-4 h-4 bg-white rounded-full shadow absolute top-1 transition-all duration-200 {isAnnual ? 'left-1' : 'left-5'}"></div>
             </div>
-            <span class="text-sm font-medium">Yearly billing (save $297)</span>
-          </div>
+            <span class="text-sm font-medium">Yearly billing (save $147)</span>
+          </button>
           
           <hr class="border-gray-100 mb-6">
           
           <ul class="space-y-3 text-sm">
             <li class="flex items-start gap-2">
-              <div class="bg-[#00a854] rounded-full p-0.5 mt-0.5 flex-shrink-0">
+              <div class="bg-[#00a854] rounded-full p-0.5 mt-0.5 shrink-0">
                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg>
               </div>
               <span>Unlimited credits <span class="text-gray-400 border border-gray-400 rounded-full w-3.5 h-3.5 inline-flex items-center justify-center text-[10px] ml-1">?</span></span>
             </li>
             <li class="flex items-start gap-2">
-              <div class="bg-[#00a854] rounded-full p-0.5 mt-0.5 flex-shrink-0">
+              <div class="bg-[#00a854] rounded-full p-0.5 mt-0.5 shrink-0">
                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg>
               </div>
               <span>Filters Pro+ <span class="text-gray-400 border border-gray-400 rounded-full w-3.5 h-3.5 inline-flex items-center justify-center text-[10px] ml-1">?</span></span>
             </li>
             <li class="flex items-start gap-2">
-              <div class="bg-[#00a854] rounded-full p-0.5 mt-0.5 flex-shrink-0">
+              <div class="bg-[#00a854] rounded-full p-0.5 mt-0.5 shrink-0">
                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg>
               </div>
               <span>Categories Pro+ <span class="text-gray-400 border border-gray-400 rounded-full w-3.5 h-3.5 inline-flex items-center justify-center text-[10px] ml-1">?</span></span>
             </li>
             <li class="flex items-start gap-2">
-              <div class="bg-[#00a854] rounded-full p-0.5 mt-0.5 flex-shrink-0">
+              <div class="bg-[#00a854] rounded-full p-0.5 mt-0.5 shrink-0">
                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg>
               </div>
               <span>Notifications Pro+ <span class="text-gray-400 border border-gray-400 rounded-full w-3.5 h-3.5 inline-flex items-center justify-center text-[10px] ml-1">?</span></span>
             </li>
              <li class="flex items-start gap-2">
-              <div class="bg-[#00a854] rounded-full p-0.5 mt-0.5 flex-shrink-0">
+              <div class="bg-[#00a854] rounded-full p-0.5 mt-0.5 shrink-0">
                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg>
               </div>
               Collections
             </li>
             <li class="flex items-start gap-2">
-              <div class="bg-[#00a854] rounded-full p-0.5 mt-0.5 flex-shrink-0">
+              <div class="bg-[#00a854] rounded-full p-0.5 mt-0.5 shrink-0">
                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg>
               </div>
               1 free team slots
@@ -188,54 +198,58 @@
 
       <!-- Team Card -->
       <div class="bg-white flex flex-col h-full relative group">
-        <div class="p-6 flex-grow">
+        <div class="p-6 grow">
           <h3 class="text-2xl font-bold mb-1">Team</h3>
           <div class="text-2xl font-bold mb-4">$299</div>
-          <p class="text-sm text-gray-600 mb-6 min-h-[40px]">
+          <p class="text-sm text-gray-600 mb-6 min-h-10">
             For teams and organizations ready to elevate their game.
           </p>
           
           <!-- Toggle -->
-          <div class="flex items-center gap-3 mb-6 cursor-pointer" on:click={toggleBilling}>
+         <button 
+            type="button"
+            class="flex items-center gap-3 mb-6 cursor-pointer bg-transparent border-0 p-0 text-left w-full" 
+            on:click={toggleBilling}
+          >
             <div class="w-10 h-6 bg-gray-200 rounded-full relative transition-colors duration-200">
               <div class="w-4 h-4 bg-white rounded-full shadow absolute top-1 transition-all duration-200 {isAnnual ? 'left-1' : 'left-5'}"></div>
             </div>
-            <span class="text-sm font-medium">Yearly billing (save $597)</span>
-          </div>
+            <span class="text-sm font-medium">Yearly billing (save $147)</span>
+          </button>
           
           <hr class="border-gray-100 mb-6">
           
           <ul class="space-y-3 text-sm">
              <li class="flex items-start gap-2">
-              <svg class="w-4 h-4 text-black mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              <svg class="w-4 h-4 text-black mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               <span>Unlimited credits <span class="text-gray-400 border border-gray-400 rounded-full w-3.5 h-3.5 inline-flex items-center justify-center text-[10px] ml-1">?</span></span>
             </li>
             <li class="flex items-start gap-2">
-              <svg class="w-4 h-4 text-black mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              <svg class="w-4 h-4 text-black mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               <span>Filters Pro+ <span class="text-gray-400 border border-gray-400 rounded-full w-3.5 h-3.5 inline-flex items-center justify-center text-[10px] ml-1">?</span></span>
             </li>
             <li class="flex items-start gap-2">
-              <svg class="w-4 h-4 text-black mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              <svg class="w-4 h-4 text-black mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               <span>Categories Pro+ <span class="text-gray-400 border border-gray-400 rounded-full w-3.5 h-3.5 inline-flex items-center justify-center text-[10px] ml-1">?</span></span>
             </li>
             <li class="flex items-start gap-2">
-              <svg class="w-4 h-4 text-black mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              <svg class="w-4 h-4 text-black mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               <span>Notifications Pro+ <span class="text-gray-400 border border-gray-400 rounded-full w-3.5 h-3.5 inline-flex items-center justify-center text-[10px] ml-1">?</span></span>
             </li>
             <li class="flex items-start gap-2">
-              <svg class="w-4 h-4 text-black mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              <svg class="w-4 h-4 text-black mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               Collections
             </li>
              <li class="flex items-start gap-2">
-              <svg class="w-4 h-4 text-black mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              <svg class="w-4 h-4 text-black mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               Collections for team
             </li>
             <li class="flex items-start gap-2">
-              <svg class="w-4 h-4 text-black mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              <svg class="w-4 h-4 text-black mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               Threads for team
             </li>
             <li class="flex items-start gap-2">
-              <svg class="w-4 h-4 text-black mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              <svg class="w-4 h-4 text-black mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               <span>3 free team slots</span>
             </li>
             <li class="flex items-start gap-2 pl-6 text-gray-500">
