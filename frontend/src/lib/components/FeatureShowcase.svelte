@@ -81,10 +81,10 @@
 	let activeCards = $derived(useCases.find(uc => uc.id === activeTab)?.cards || []);
 </script>
 
-<section class="mx-auto max-w-[1180px] px-5 sm:px-10 md:px-20 xl:px-0 py-12 md:py-16">
+<section class="mx-auto max-w-[1180px] bg-[#F5F5F0] px-5 sm:px-10 md:px-20 xl:px-0 py-12 md:py-16">
 	<!-- Section Header -->
 	<div class="text-center mb-8 md:mb-12">
-		<h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 md:mb-8">
+		<h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-6 md:mb-8">
 			Use cases for your needs
 		</h2>
 

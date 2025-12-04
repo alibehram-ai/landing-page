@@ -7,5 +7,8 @@
 </script>
 
 <Head />
+<div class="min-h-screen bg-[#F5F5F0]">
 {@render children()}
+</div>
+
 <Footer />

@@ -81,7 +81,7 @@
 		</h2>
 
 	<!-- Tab Navigation -->
-	<div class="bg-[#f2f2f2] border border-[#dcdcdc] overflow-x-auto mb-8 md:mb-12">
+	<div class="bg-[#F5F5F0] border border-[#dcdcdc] overflow-x-auto mb-8 md:mb-12">
 		<div class="flex min-w-max md:min-w-0">
 			{#each features as feature}
 				<button
@@ -107,7 +107,7 @@
 		</div>
 
 		<!-- Right: Visual Demo -->
-		<div class="bg-[#fafaf5] border border-[#dcdcdc]">
+		<div class="bg-[#F5F5F0] border border-[#dcdcdc]">
 			{#if activeFeature.id === 'categories'}
 				<!-- Category Filter Demo -->
 				<div class="p-6 md:p-12 flex gap-4 md:gap-8 h-full">

@@ -1,7 +1,7 @@
 
 <script lang="ts">
 	import { PUBLIC_DEMO_VIDEO_ID } from '$env/static/public';
-	
+	import {TutorialImage} from '$lib/assets';
 	let isPlaying = $state(false);
 	
 	function playVideo() {
@@ -9,7 +9,7 @@
 	}
 </script>
 
-<section id="tutorial" class="w-full max-w-[1510px] mx-auto px-5 py-8 sm:py-12 md:py-16 md:px-20 xl:px-[165px]">
+<section id="tutorial" class="w-full max-w-[1510px] bg-[#F5F5F0] mx-auto px-5 py-8 sm:py-12 md:py-16 md:px-20 xl:px-[165px]">
 	<!-- Subtitle Badge -->
 	<p class="text-center text-base sm:text-lg leading-6 text-[#1e1e1e] mb-8 sm:mb-12 md:mb-14">
 		The trusted standard since 2022
@@ -55,7 +55,9 @@
 					</div>
 				{:else}
 					<!-- Placeholder for interface image -->
-					<div class="w-full aspect-1180/634 bg-gray-100"></div>
+					<div class="w-full aspect-1180/634">
+						<img src={TutorialImage} alt="AfterLib interface preview" class="w-full h-full object-cover" />
+					</div>
 				{/if}
 			</div>
 

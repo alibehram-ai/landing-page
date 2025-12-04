@@ -131,4 +131,6 @@ export { default as TumblerSmallDefault3_3x } from './tumbler-small-default-3@3x
 export { default as TumblerSmallDefault4 } from './tumbler-small-default-4.webp';
 export { default as TumblerSmallDefault4_2x } from './tumbler-small-default-4@2x.webp';
 export { default as TumblerSmallDefault4_3x } from './tumbler-small-default-4@3x.webp';
+
+export { default as TutorialImage } from './tutorial.png';
     
