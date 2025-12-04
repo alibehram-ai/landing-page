@@ -16,7 +16,7 @@
 	<div class="hidden md:flex min-h-[432px] w-3xl overflow-hidden bg-white shadow-[inset_0_0_12px_6px_rgba(0,0,0,0.16)]">
 		<!-- Normal Ad Library Column -->
 		<div class="flex w-1/2 flex-col gap-8 border-r border-[#e0e0e0] py-8 pr-6 pl-12">
-			<h3 class="text-right text-[32px] font-bold leading-10 text-[#1e1e1e] pr-6">
+			<h3 class="text-right text-[30px] font-bold leading-10 text-[#1e1e1e] pr-6">
 				Normal ad library
 			</h3>
 			<div class="flex flex-col gap-12">
@@ -86,7 +86,7 @@
 
 		<!-- AfterLib's Ad Library Column -->
 		<div class="flex w-1/2 flex-col gap-8 py-8 pl-6 pr-12">
-			<h3 class="text-left text-[32px] font-bold leading-10 text-[#1e1e1e] pl-6">AfterLib's ad library</h3>
+			<h3 class="text-left text-[30px] font-bold leading-10 text-[#1e1e1e] pl-6">AfterLib's ad library</h3>
 			<div class="flex flex-col gap-12">
 				<!-- List Items with checkmark icon (icon on left, text left-aligned) -->
 				<div class="flex items-center gap-2">
