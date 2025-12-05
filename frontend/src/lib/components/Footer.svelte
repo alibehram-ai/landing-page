@@ -3,8 +3,8 @@
   import { LogoFull2x, IconLeaves, IconLeaves2, IconHelp11, IconChatEmpty } from '$lib/assets/index';
 const isBlogPage = $derived(page.url.pathname.startsWith('/blogs')); 
 </script>
-<div class="bg-[#F5F5F0]">
-<footer class="w-full border-t  border-[#e0e0e0] max-w-5xl mx-auto">
+<div class="bg-[#F5F5F0] ">
+<footer class="w-full max-w-7xl border-t  border-[#e0e0e0]  mx-auto">
   <!-- Main Footer Content -->
   <div class="max-w-[1180px] mx-auto px-6 py-8 sm:py-12 lg:py-16">
     <div class="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16">

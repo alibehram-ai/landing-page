@@ -16,7 +16,7 @@
 	</p>
 
 	<!-- Headline and Description -->
-	<div class="max-w-[700px]   mb-8 sm:mb-12 md:mb-14">
+	<div class="  mb-8 sm:mb-12 md:mb-14">
 		<h1 class="text-2xl text-left md:text-center sm:text-3xl md:text-[40px] leading-8 sm:leading-10 md:leading-12 font-bold text-[#1e1e1e] mb-4 sm:mb-6 md:mb-7">
 			See what's scaling <br> and what's about to take off
 		</h1>
