@@ -18,10 +18,10 @@
 	<!-- Headline and Description -->
 	<div class="max-w-[700px] mx-auto mb-8 sm:mb-12 md:mb-14">
 		<h1 class="text-2xl sm:text-3xl md:text-[40px] leading-8 sm:leading-10 md:leading-12 font-bold text-center text-[#1e1e1e] mb-4 sm:mb-6 md:mb-7">
-			See what's scaling and what's about to take off
+			See what's scaling <br> and what's about to take off
 		</h1>
 		<p class="text-base sm:text-xl md:text-2xl leading-6 sm:leading-7 md:leading-8 text-center text-[#1e1e1e]">
-			500K+ new ads added daily. Verified reach, smart filters, growth signals. Real data. No hype.
+			500K+ new ads added daily. Verified reach, smart filters,<br> growth signals. Real data. No hype.
 		</p>
 	</div>
 
@@ -71,7 +71,7 @@
 
 			<!-- Play Button Controls (hidden when playing) -->
 			{#if !isPlaying}
-				<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full sm:w-auto flex justify-center px-4 sm:px-0">
+				<div class="absolute -top-5 left-1/2 -translate-x-1/2 w-full sm:w-auto flex justify-center px-4 sm:px-0">
 					<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-0.5 w-full sm:w-auto">
 						<!-- Play Button -->
 						<button 
