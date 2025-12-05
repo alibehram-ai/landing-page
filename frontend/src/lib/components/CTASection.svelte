@@ -75,7 +75,7 @@
             It's not an update. It's the start of a new era.
           </p>
 
-          <button class="bg-[#00a854] hover:bg-[#008f47] text-white font-bold text-base py-3 px-8 transition-colors duration-200">
+          <button class="bg-[#00a854] hover:bg-[#008f47] text-white w-full max-w-sm md:max-w-54 font-bold text-base py-3 px-8 transition-colors duration-200">
             Unlock AfterLib
           </button>
         </div>
@@ -85,7 +85,7 @@
   </div>
 
   <!-- SECTION 2: Text Content -->
-  <div class="w-full bg-[#fdfdfc] py-20 px-4 md:px-16 flex justify-center">
+  <div class="w-full bg-[#F5F5F0] py-20 px-4 md:px-16 flex justify-center">
     <!-- Inner Content Container: Updated to max-w-5xl and mx-auto -->
     <div class="w-full max-w-2xl mx-auto grid md:grid-cols-1 gap-12 md:gap-24 p-8" >
       

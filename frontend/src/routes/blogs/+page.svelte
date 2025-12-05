@@ -73,8 +73,8 @@
 					Uncover standout products and high-converting campaigns before anyone else
 				</p>
 				<a
-					href="#join"
-					class="inline-block bg-[#fafaf5] px-8 py-4 text-lg font-bold text-[#1e1e1e] shadow-[0_0.5px_0.8px_rgba(10,19,53,0.08),0_0_0.5px_rgba(0,0,0,0.4),0_0_0.5px_rgba(0,0,0,0.64)] transition-colors hover:bg-[#f0f0eb]"
+					href="/#join"
+					class="inline-block w-full max-w-sm md:max-w-54  bg-[#fafaf5] px-8 py-4 text-lg font-bold text-[#1e1e1e] shadow-[0_0.5px_0.8px_rgba(10,19,53,0.08),0_0_0.5px_rgba(0,0,0,0.4),0_0_0.5px_rgba(0,0,0,0.64)] transition-colors hover:bg-[#f0f0eb]"
 				>
 					Unlock AfterLib
 				</a>

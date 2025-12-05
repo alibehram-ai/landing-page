@@ -6,7 +6,9 @@
 			label: 'Smart categories',
 			title: 'Smart categories',
 			description:
-				'Understand your market at every layer.\nFilter ads by product categories and customer pain points to find what actually converts.',
+				'Understand your market at every layer.',
+			descriptionDetail:
+				'Filter ads by product categories and customer pain points to find what actually converts.',
 			categories: ['Pets', 'Clothing', 'Furniture', 'Beauty', 'For Kids'],
 			selectedCategory: 2, // Furniture selected
 			sampleAds: [
@@ -20,6 +22,7 @@
 			title: 'Smart filters',
 			description:
 				'Advanced filtering capabilities to narrow down your search and find the most relevant ads for your needs.',
+			descriptionDetail: '',
 			categories: [],
 			selectedCategory: -1,
 			sampleAds: []
@@ -30,6 +33,7 @@
 			title: 'Reach & spend transparency',
 			description:
 				"See verified reach data and spending estimates to understand what's actually working in your market.",
+			descriptionDetail: '',
 			categories: [],
 			selectedCategory: -1,
 			sampleAds: []
@@ -40,6 +44,7 @@
 			title: 'Performance scores',
 			description:
 				'AI-driven performance scoring helps you identify winning ads and understand what makes them successful.',
+			descriptionDetail: '',
 			categories: [],
 			selectedCategory: -1,
 			sampleAds: []
@@ -66,26 +71,38 @@
 	];
 
 	let activeTab = $state('categories');
+	let expandedMobile = $state<string | null>('categories');
 	import {OnDemand, SmartControl, SmartCategories, PageInsights} from '$lib/assets';
+	
 	// Get active feature
 	let activeFeature = $derived(features.find((f) => f.id === activeTab) || features[0]);
+	
+	function toggleMobileAccordion(id: string) {
+		expandedMobile = expandedMobile === id ? null : id;
+	}
 </script>
 
 <section class=" py-12 md:py-16">
-	<div class="mx-auto max-w-[1180px] px-5 sm:px-10 md:px-20 xl:px-0">
+	<div class="mx-auto sm:max-w-sm md:max-w-[1180px] px-5 sm:px-10 md:px-20 xl:px-0">
 		<!-- Section Header -->
 		<h2
-			class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-8 md:mb-12 text-left md:text-center"
+			class="text-2xl hidden md:flex sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-8 md:mb-12 text-left md:text-center"
 		>
 			A glimpse of what's waiting for you
 		</h2>
+		<h2
+			class="text-2xl flex md:hidden sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-8 md:mb-12 text-left md:text-center"
+		>
+			A glimpse of what's <br/> waiting for you
+		</h2>
 
-	<!-- Tab Navigation -->
-	<div class="bg-[#F5F5F0] border border-[#dcdcdc] overflow-x-auto mb-8 md:mb-12">
-		<div class="flex min-w-max md:min-w-0">
+	<!-- Desktop Tab Navigation -->
+	<div class="hidden md:block bg-[#F5F5F0] border border-[#dcdcdc] mb-8 md:mb-12">
+		<div class="flex">
 			{#each features as feature}
 				<button
-					class="shrink-0 px-4 md:px-6 py-3 md:py-4 text-xs md:text-lg font-bold transition-all whitespace-nowrap border-r border-[#dcdcdc] last:border-r-0
+					type="button"
+					class="flex-1 px-4 md:px-6 py-3 md:py-4 text-xs md:text-lg font-bold transition-all whitespace-nowrap border-r border-[#dcdcdc] last:border-r-0
 						{activeTab === feature.id
 							? 'bg-white text-[#1e1e1e] border border-[#e0e0e0] shadow-[0_0_0.5px_0_rgba(0,0,0,0.5),0_3px_4px_0_rgba(41,44,44,0.16)]'
 							: 'bg-[#f2f2f2] text-[#1e1e1e] hover:bg-[#e8e8e8]'}"
@@ -101,9 +118,14 @@
 			<h3 class="text-2xl md:text-[32px] font-bold text-[#1e1e1e] leading-tight mb-4 md:mb-6">
 				{activeFeature.title}
 			</h3>
-			<p class="text-lg md:text-2xl text-[#1e1e1e] leading-relaxed whitespace-pre-line">
+			<p class="text-lg md:text-2xl text-[#1e1e1e] leading-relaxed">
 				{activeFeature.description}
 			</p>
+			{#if activeFeature.descriptionDetail}
+				<p class="text-lg md:text-2xl text-[#1e1e1e] leading-relaxed mt-4">
+					{activeFeature.descriptionDetail}
+				</p>
+			{/if}
 		</div>
 
 		<!-- Right: Visual Demo -->
@@ -116,6 +138,50 @@
 			{/if}
 		</div>
 	</div>
+	</div>
+
+	<!-- Mobile Accordion -->
+	<div class="md:hidden mb-8 flex flex-col gap-5">
+		{#each features as feature, index}
+			<div class="">
+				<!-- Accordion Header -->
+				<button
+					type="button"
+					class="w-full bg-white border-b border-[#dcdcdc] p-6 text-left flex items-center justify-between"
+					onclick={() => toggleMobileAccordion(feature.id)}
+				>
+					<h3 class="text-xl font-bold text-[#1e1e1e]">
+						{feature.title}
+					</h3>
+					<span class="text-2xl text-[#1e1e1e] transition-transform {expandedMobile === feature.id ? 'rotate-180' : ''}">
+						{expandedMobile === feature.id ? '−' : '+'}
+					</span>
+				</button>
+
+				<!-- Accordion Content -->
+				{#if expandedMobile === feature.id}
+					<div class="bg-white">
+						<div class="p-6 border-b border-[#dcdcdc]">
+							<p class="text-lg text-[#1e1e1e] leading-relaxed">
+								{feature.description}
+							</p>
+							{#if feature.descriptionDetail}
+								<p class="text-lg text-[#1e1e1e] leading-relaxed mt-4">
+									{feature.descriptionDetail}
+								</p>
+							{/if}
+						</div>
+						<div class="bg-[#F5F5F0]">
+							{#if feature.id === 'categories'}
+								<img src={SmartCategories} alt="Smart Categories Demo" class="w-full" />
+							{:else}
+								<img src={SmartCategories} alt="{feature.title} Demo" class="w-full" />
+							{/if}
+						</div>
+					</div>
+				{/if}
+			</div>
+		{/each}
 	</div>
 <!-- Feature Stats Grid -->
 	<div class="grid grid-cols-2 md:grid-cols-4 border-t-0">

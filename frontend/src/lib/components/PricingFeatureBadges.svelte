@@ -1,13 +1,13 @@
 <section class="mx-auto flex max-w-5xl bg-green-600 border-black border-2 flex-col items-center gap-8 sm:gap-12 md:gap-16 px-5 sm:px-10 md:px-20 xl:px-[165px] py-8 sm:py-12 md:py-16">
 	<!-- Heading Section -->
-	<div class="flex flex-col items-center gap-2 sm:gap-3 md:gap-4">
-		<h2 class="text-left sm:text-center text-2xl sm:text-3xl md:text-[40px] font-bold leading-8 sm:leading-10 md:leading-12">
+	<div class="flex flex-col items-center ">
+		<h2 class="z-10 text-left sm:text-center text-2xl sm:text-3xl md:text-[40px] font-bold leading-6 sm:leading-10 ">
 			<span class="bg-black px-0.5 text-white">The difference</span>
 		</h2>
-		<h2 class="text-left sm:text-center text-2xl sm:text-3xl md:text-[40px] font-bold leading-8 sm:leading-10 md:leading-12">
+		<h2 class="z-5 text-left sm:text-center text-2xl sm:text-3xl md:text-[40px] font-bold leading-6 sm:leading-10">
 			<span class="bg-black px-0.5 text-white">between seeing ads</span>
 		</h2>
-		<h2 class="text-left sm:text-center text-2xl sm:text-3xl md:text-[40px] font-bold leading-8 sm:leading-10 md:leading-12">
+		<h2 class="text-left sm:text-center text-2xl sm:text-3xl md:text-[40px] font-bold leading-6 sm:leading-10">
 			<span class="bg-black px-0.5 text-white">& understanding them</span>
 		</h2>
 	</div>

@@ -113,12 +113,10 @@
 
     <!-- Bottom Contact Section -->
     <div class="text-center mt-20">
-      <p class="text-lg text-gray-800 mb-2">
-        Have a question? We're here for you!
-      </p>
       <p class="text-lg text-gray-800 mb-8">
-        Our support team is ready to assist you
+        Have a question? We're here for you! <br/>         Our support team is ready to assist you
       </p>
+      
       
       <button id="support" class="inline-flex items-center justify-center px-6 py-3 border border-gray-300 rounded bg-white text-sm font-bold text-gray-800 hover:bg-gray-50 transition-colors duration-200 shadow-sm gap-2">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

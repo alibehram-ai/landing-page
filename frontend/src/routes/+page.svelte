@@ -16,7 +16,7 @@
 <PricingFeatureBadges />
 
 <!-- Feature Showcase Section -->
-<FeatureShowcase />
+<!-- <FeatureShowcase /> -->
 
 <SmartFeatures/>
 

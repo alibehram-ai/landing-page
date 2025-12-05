@@ -60,10 +60,10 @@
 
 <section id="affiliate" class="w-full max-w-[1510px] mx-auto px-5 sm:px-10 md:px-20 xl:px-[165px] py-8 sm:py-12 md:py-16">
 	<!-- Heading Section -->
-	<div class="max-w-[1180px] mx-auto mb-8 sm:mb-12 md:mb-16">
-		<div class="flex flex-col items-center gap-4 sm:gap-6 mb-8 sm:mb-12 md:mb-16">
-			<h2 class="text-2xl sm:text-3xl md:text-[40px] leading-8 sm:leading-10 md:leading-12 font-bold text-[#1e1e1e] text-center max-w-[464px] px-4">
-				Trusted by professional marketers worldwide
+	<div class="max-w-[1180px] md:mx-auto mb-8 sm:mb-12 md:mb-16">
+		<div class="flex flex-col items-start md:items-center gap-1  mb-8 sm:mb-12 md:mb-16 w-full">
+			<h2 class="text-2xl sm:text-3xl md:text-[40px] leading-8 sm:leading-10 md:leading-12 font-bold text-[#1e1e1e] md:text-center  md:px-4">
+				Trusted by professional <br/> marketers worldwide
 			</h2>
 			<div class="bg-[#02a758] px-0.5">
 				<p class="text-xl sm:text-2xl md:text-[32px] leading-8 sm:leading-9 md:leading-10 font-bold text-white">Review score 4.9</p>
@@ -163,7 +163,7 @@
 			<div class="mt-6 px-2">
 				<div class="h-1 bg-gray-200 overflow-hidden">
 					<div 
-						class="h-full bg-[#1e1e1e] transition-all duration-300 ease-out"
+						class="h-full bg-green-600 transition-all duration-300 ease-out"
 						style="width: {((currentSlide + 1) / reviews.length) * 100}%"
 					></div>
 				</div>
@@ -171,7 +171,7 @@
 		</div>
 
 		<!-- Carousel Controls -->
-		<div class="flex justify-center gap-px mt-8 sm:mt-12 md:mt-16">
+		<div class=" justify-center gap-px mt-8 sm:mt-12 md:mt-16 hidden md:flex">
 			<button
 				onclick={prevSlide}
 				class="w-12 h-12 bg-white border border-[#c2c2c2] flex items-center justify-center hover:bg-gray-50 transition-colors"

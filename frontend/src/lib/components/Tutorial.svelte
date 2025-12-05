@@ -11,16 +11,16 @@
 
 <section id="tutorial" class="w-full max-w-[1510px] bg-[#F5F5F0] mx-auto px-5 py-8 sm:py-12 md:py-16 md:px-20 xl:px-[165px]">
 	<!-- Subtitle Badge -->
-	<p class="text-center text-base sm:text-lg leading-6 text-[#1e1e1e] mb-8 sm:mb-12 md:mb-14">
+	<p class="md:text-center text-base sm:text-lg leading-6 text-[#1e1e1e] mb-8 sm:mb-12 md:mb-14">
 		The trusted standard since 2022
 	</p>
 
 	<!-- Headline and Description -->
-	<div class="max-w-[700px] mx-auto mb-8 sm:mb-12 md:mb-14">
-		<h1 class="text-2xl sm:text-3xl md:text-[40px] leading-8 sm:leading-10 md:leading-12 font-bold text-center text-[#1e1e1e] mb-4 sm:mb-6 md:mb-7">
+	<div class="max-w-[700px]   mb-8 sm:mb-12 md:mb-14">
+		<h1 class="text-2xl text-left md:text-center sm:text-3xl md:text-[40px] leading-8 sm:leading-10 md:leading-12 font-bold text-[#1e1e1e] mb-4 sm:mb-6 md:mb-7">
 			See what's scaling <br> and what's about to take off
 		</h1>
-		<p class="text-base sm:text-xl md:text-2xl leading-6 sm:leading-7 md:leading-8 text-center text-[#1e1e1e]">
+		<p class="text-base text-left md:text-center sm:text-xl md:text-2xl leading-6 sm:leading-7 md:leading-8  text-[#1e1e1e]">
 			500K+ new ads added daily. Verified reach, smart filters,<br> growth signals. Real data. No hype.
 		</p>
 	</div>
